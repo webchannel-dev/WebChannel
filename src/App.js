@@ -9,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>Webchannel.dev coming soon....</p>
-          <p hidden>v-02.05.2019-21:56</p>
+          <p> v-02.05.2019-21:56 </p>
         </header>
       </div>
     );
