@@ -1,6 +1,5 @@
 # [WEBCHANNEL](https://webchannel.de/)
 
-
 ## Preview
 
 **[View Live Preview](https://webchannel.de/)**
@@ -13,7 +12,6 @@
 [![dependencies Status](https://david-dm.org/AJ-7885/webchannel.svg)](https://david-dm.org/AJ-7885/webchannel)
 [![devDependencies Status](https://david-dm.org/AJ-7885/webchannel/dev-status.svg)](https://david-dm.org/AJ-7885/webchannel?type=dev)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/67c86c7bd116499b8a1c1d6865d55514)](https://www.codacy.com/app/Ali-7885/webchannel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AJ-7885/webchannel&amp;utm_campaign=Badge_Grade)
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
