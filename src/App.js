@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo                 from './assets/image/logo.png';
+import logo from './assets/image/logo.png';
 import './App.css';
 
 class App extends Component {
@@ -8,10 +8,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Webchannel.dev coming soon....
-          </p>
-
+          <p>Webchannel.dev coming soon....</p>
+          <p hidden>v-02.05.2019-21:56</p>
         </header>
       </div>
     );
