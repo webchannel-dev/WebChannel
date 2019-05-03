@@ -1,8 +1,8 @@
-# [WEBCHANNEL](https://webchannel.de/)
+# [WEBCHANNEL](https://webchannel.dev/)
 
 ## Preview
 
-**[View Live Preview](https://webchannel.de/)**
+**[View Live Preview](https://webchannel.dev/)**
 
 ## Status
 
