@@ -7,7 +7,7 @@
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/AJ-7885/webchannel/edit/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/webchannel.svg)](https://www.npmjs.com/package/webchannel)
+[![npm version](https://img.shields.io/npm/v/webchannel.dev.svg)](https://www.npmjs.com/package/webchannel.dev)
 [![Build Status](https://api.travis-ci.org/AJ-7885/webchannel.svg?branch=master)](https://travis-ci.org/AJ-7885/webchannel)
 [![dependencies Status](https://david-dm.org/AJ-7885/webchannel.svg)](https://david-dm.org/AJ-7885/webchannel)
 [![devDependencies Status](https://david-dm.org/AJ-7885/webchannel/dev-status.svg)](https://david-dm.org/AJ-7885/webchannel?type=dev)
