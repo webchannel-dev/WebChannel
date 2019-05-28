@@ -1,20 +1,23 @@
 {
   "name": "webchannel.dev",
-  "version": "0.1.0",
+  "version": "0.1.01",
   "private": false,
   "homepage": "https://webchannel.dev/",
   "dependencies": {
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-router-dom": "5.0.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.1"
   },
   "devDependencies": {
-    "husky": "2.2.0",
-    "lint-staged": "8.1.5",
-    "prettier": "1.17.0"
+    "husky": "2.3.0",
+    "lint-staged": "8.1.7",
+    "prettier": "1.17.1"
   },
   "scripts": {
+    "postversion": "yarn publish --tag=next",
+    "postpublish": "git push origin --all; git push origin --tags",
+    "preversion": "yarn test",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
