@@ -1,0 +1,27 @@
+{
+    "extends": ["react-app", "standard", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "curly": ["error", "all"],
+        "prettier/prettier": "error",
+        "no-console": ["error", { "allow": ["warn", "error"] }],
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index"
+                ],
+                "newlines-between": "always"
+            }
+        ]
+    },
+    "globals": {},
+    "env": {
+        "browser": true
+    }
+}
