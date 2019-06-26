@@ -1,6 +1,6 @@
 {
   "name": "webchannel.dev",
-  "version": "0.1.01",
+  "version": "0.1.02",
   "private": false,
   "homepage": "https://webchannel.dev/",
   "dependencies": {
@@ -18,7 +18,7 @@
     "postversion": "yarn publish --tag=next",
     "postpublish": "git push origin --all; git push origin --tags",
     "preversion": "yarn test",
-    "start": "react-scripts start",
+    "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
   },
@@ -36,6 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "yarn": "^1.13.0"
   },
   "husky": {
     "hooks": {
