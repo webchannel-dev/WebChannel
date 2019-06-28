@@ -25,3 +25,16 @@ demo
 CHANGELOG.md
 README.md
 .storybook
+sonar-project.properties
+CNAME
+.env
+.dockerignore
+docker-compose.yml
+Dockerfile
+.prettierrc
+.prettierignore
+.eslintrc
+.eslintignore
+.editorconfig
+.github
+
