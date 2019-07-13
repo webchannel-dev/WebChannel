@@ -189,7 +189,7 @@
                 },
                 "singleQuote": {
                     "description": "Use single quotes instead of double quotes.",
-                    "default": false,
+                    "default": true,
                     "type": "boolean"
                 },
                 "tabWidth": {
