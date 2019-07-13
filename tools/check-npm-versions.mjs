@@ -7,7 +7,7 @@ const pkg = require('../package.json');
 const STEM = 'dependencies';
 let dirty = 0;
 
-console.log('CHECK: package.json, only exact versions.');
+console.info('CHECK: package.json, only exact versions.');
 // load package.json
 Object.keys(pkg)
     // find dependencies, devDeve... etc
@@ -22,5 +22,5 @@ Object.keys(pkg)
         });
     });
 
-console.log(dirty > 0 ? `FAILED with ${dirty} invalid versions` : 'SUCCESS');
+console.info(dirty > 0 ? `FAILED with ${dirty} invalid versions` : 'SUCCESS');
 process.exit(dirty);
