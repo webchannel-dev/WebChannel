@@ -29,8 +29,7 @@
     "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint --cache --fix src/ && prettier 'src/**/*.{js,jsx,json}' --write .",
-    "lint1": "eslint src -c .eslintrc.json --ext js,jsx"
+    "lint": "eslint --cache --fix src/ && prettier 'src/**/*.{js,jsx,json}' --write ."
   },
   "eslintConfig": {
     "extends": "react-app"
