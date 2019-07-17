@@ -86,7 +86,7 @@
                 },
                 "jsxSingleQuote": {
                     "description": "Use single quotes in JSX.",
-                    "default": false,
+                    "default": true,
                     "type": "boolean"
                 },
                 "parser": {
