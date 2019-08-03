@@ -1,18 +1,31 @@
 {
   "name": "webchannel.dev",
-  "version": "0.1.6",
-  "private": false,
+  "version": "0.1.8",
+  "private": true,
   "homepage": "https://webchannel.dev/",
+  "license": "UNLICENSED",
   "dependencies": {
-    "npm-check-updates": "^3.1.12",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
-    "husky": "2.5.0",
-    "lint-staged": "8.2.1",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.14.0",
+    "eslint": "6.0.1",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-config-standard": "13.0.1",
+    "eslint-plugin-import": "2.18.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-node": "9.1.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.14.2",
+    "eslint-plugin-standard": "4.0.0",
+    "husky": "3.0.0",
+    "lint-staged": "9.2.0",
     "prettier": "1.18.2"
   },
   "scripts": {
@@ -21,7 +34,8 @@
     "preversion": "yarn test",
     "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*.{js,jsx} --collectCoverageFrom=!src/**/*.{data,story,style}.js",
+    "lint": "eslint --cache --fix src/ && prettier 'src/**/*.{js,jsx,json}' --write ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,8 +53,8 @@
     ]
   },
   "engines": {
-    "node": "^12.0.0",
-    "yarn": "^1.13.0"
+    "node": "^12.6.0",
+    "yarn": "^1.16.0"
   },
   "husky": {
     "hooks": {
@@ -49,6 +63,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "eslint --cache --fix",
       "prettier --single-quote --write",
       "git add"
     ]

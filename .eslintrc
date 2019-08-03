@@ -1,7 +1,13 @@
 {
-    "extends": ["react-app", "standard", "prettier"],
-    "plugins": ["prettier"],
+    "extends": ["airbnb", "prettier", "prettier/react"],
+    "plugins": ["import", "react", "prettier"],
     "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", "jsx"]
+            }
+        ],
         "curly": ["error", "all"],
         "prettier/prettier": "error",
         "no-console": ["error", { "allow": ["warn", "error"] }],
@@ -22,6 +28,8 @@
     },
     "globals": {},
     "env": {
+        "es6": true,
+        "jest": true,
         "browser": true
     }
 }
