@@ -11,9 +11,9 @@
 [![Build Status](https://api.travis-ci.org/AJ-7885/webchannel.svg?branch=master)](https://travis-ci.org/AJ-7885/webchannel)
 [![dependencies Status](https://david-dm.org/AJ-7885/webchannel.svg)](https://david-dm.org/AJ-7885/webchannel)
 [![devDependencies Status](https://david-dm.org/AJ-7885/webchannel/dev-status.svg)](https://david-dm.org/AJ-7885/webchannel?type=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/67c86c7bd116499b8a1c1d6865d55514)](https://www.codacy.com/app/Ali-7885/webchannel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AJ-7885/webchannel&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/67c86c7bd116499b8a1c1d6865d55514)](https://www.codacy.com/app/Ali-7885/webchannel?utm_source=github.com&utm_medium=referral&utm_content=AJ-7885/webchannel&utm_campaign=Badge_Grade)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React HomePage](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -54,7 +54,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create React HomePage documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
@@ -66,7 +66,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/co
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+### Making a Progressive Web HomePage
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
@@ -81,3 +81,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+# Rules
+
+-   The Atomic Design should have a file of <b>variables</b> and it must be imported by each component;
+-   The <b>atoms</b> should be written without margins and positions;
+-   Only the <b>molecules</b> and <b>organisms</b> can set the positions of atoms, but these stacks - can’t have any styles of margins and positions;
+-   <b>Templates</b> have only one function: to set the grid of pages but never positions of specific components;
+-   <b>Pages </b>render the components with a template defined and it’s here that the <b>Atomic Design</b> will be connected to the rest of the application;

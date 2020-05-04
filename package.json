@@ -32,7 +32,8 @@
     "postversion": "yarn publish --tag=next",
     "postpublish": "git push origin --all; git push origin --tags",
     "preversion": "yarn test",
-    "start": "HTTPS=true react-scripts start",
+    "start": "react-scripts start",
+    "start:https": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*.{js,jsx} --collectCoverageFrom=!src/**/*.{data,story,style}.js",
     "lint": "eslint --cache --fix src/ && prettier 'src/**/*.{js,jsx,json}' --write ."
@@ -53,8 +54,8 @@
     ]
   },
   "engines": {
-    "node": "^12.6.0",
-    "yarn": "^1.15.0"
+    "node": "^13.3.0",
+    "yarn": ">1.15.0"
   },
   "husky": {
     "hooks": {
