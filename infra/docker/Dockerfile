@@ -1,5 +1,5 @@
 # base image
-FROM node:12.6.0-alpine as development
+FROM node:12.16.1-alpine as development
 
 # maintainer
 LABEL maintainer="aj-7885"
