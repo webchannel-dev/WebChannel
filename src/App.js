@@ -1,7 +1,6 @@
 import React from 'react';
 
 import logo from './assets/image/logo.png';
-import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 

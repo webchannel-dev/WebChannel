@@ -1,4 +1,4 @@
-.App {
+.Webchannel {
     text-align: center;
 }
 
@@ -8,8 +8,8 @@ p {
     padding: 4rem;
 }
 
-.App-logo {
-    /*animation: App-logo-spin infinite 20s linear;*/
+.Webchannel-logo {
+    /*animation: HomePage-logo-spin infinite 20s linear;*/
     -webkit-animation-name: shake;
     animation-name: shake;
     animation: shake 5s ease both infinite;
@@ -17,7 +17,7 @@ p {
     pointer-events: none;
 }
 
-.App-header {
+.Webchannel-header {
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
@@ -28,11 +28,11 @@ p {
     color: white;
 }
 
-.App-link {
+.Webchannel-link {
     color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes Webchannel-logo-spin {
     from {
         transform: rotate(0deg);
     }
