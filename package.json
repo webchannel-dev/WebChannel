@@ -1,5 +1,5 @@
 {
-  "name": "webchannel.dev",
+  "name": "webchanneldev",
   "version": "1.6.0",
   "private": true,
   "homepage": "https://webchannel.dev/",
@@ -70,5 +70,7 @@
   },
   "prettier": {
     "singleQuote": true
-  }
+  },
+  "keywords": [],
+  "description": ""
 }

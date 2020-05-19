@@ -11,7 +11,7 @@ function App() {
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>Webchannel.dev coming soon....</p>
-                <p> v-02.05.2019-21:56 </p>
+                <p> v-19.05.2020-21:56 </p>
             </header>
             <Footer />
         </div>
