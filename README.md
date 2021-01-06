@@ -84,8 +84,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # Rules
 
--   The Atomic Design should have a file of <b>variables</b> and it must be imported by each component;
--   The <b>atoms</b> should be written without margins and positions;
--   Only the <b>molecules</b> and <b>organisms</b> can set the positions of atoms, but these stacks - can’t have any styles of margins and positions;
--   <b>Templates</b> have only one function: to set the grid of pages but never positions of specific components;
--   <b>Pages </b>render the components with a template defined and it’s here that the <b>Atomic Design</b> will be connected to the rest of the application;
+- The Atomic Design should have a file of <b>variables</b> and it must be imported by each component;
+- The <b>atoms</b> should be written without margins and positions;
+- Only the <b>molecules</b> and <b>organisms</b> can set the positions of atoms, but these stacks - can’t have any styles of margins and positions;
+- <b>Templates</b> have only one function: to set the grid of pages but never positions of specific components;
+- <b>Pages </b>render the components with a template defined and it’s here that the <b>Atomic Design</b> will be connected to the rest of the application;
