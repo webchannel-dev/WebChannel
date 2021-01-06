@@ -1,76 +1,89 @@
 {
-  "name": "webchanneldev",
-  "version": "1.6.0",
-  "private": true,
-  "homepage": "https://webchannel.dev/",
-  "license": "UNLICENSED",
-  "dependencies": {
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.0"
-  },
-  "devDependencies": {
-    "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.5",
-    "eslint": "7.12.1",
-    "eslint-config-airbnb": "18.2.0",
-    "eslint-config-prettier": "6.14.0",
-    "eslint-config-standard": "15.0.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.21.5",
-    "eslint-plugin-standard": "4.0.2",
-    "husky": "4.3.0",
-    "lint-staged": "10.5.0",
-    "prettier": "2.1.2"
-  },
-  "scripts": {
-    "postversion": "yarn publish --tag=next",
-    "postpublish": "git push origin --all; git push origin --tags",
-    "preversion": "yarn test",
-    "start": "react-scripts start",
-    "start:https": "HTTPS=true react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*.{js,jsx} --collectCoverageFrom=!src/**/*.{data,story,style}.js",
-    "lint": "eslint --cache --fix src/ && prettier 'src/**/*.{js,jsx,json}' --write ."
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "webchanneldev",
+    "version": "1.6.0",
+    "keywords": [
+        "react",
+        "starter kit",
+        "website"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">12.16.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "description": "WebChannel.DEV is the react website starting kit.",
+    "private": true,
+    "license": "UNLICENSED",
+    "author": "https://github.com/AJ-7885",
+    "homepage": "https://webchannel.dev/",
+    "scripts": {
+        "postversion": "yarn publish --tag=next",
+        "postpublish": "git push origin --all; git push origin --tags",
+        "preversion": "yarn test",
+        "start": "react-scripts start",
+        "start:https": "HTTPS=true react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom --coverage --watchAll=false  --bail=1 --collectCoverageFrom=src/**/*.{js,jsx,ts,tsx} --collectCoverageFrom=!src/**/*.{data,story,style}.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix && prettier './src/**/*.{js,jsx,json,css}' --write ."
+    },
+    "engines": {
+        "node": ">12.16.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "eslintConfig": {
+        "extends": [
+            "webchannel"
+        ]
+    },
+    "prettier": "prettier-config-webchannel",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+            "yarn lint:fix",
+            "yarn test",
+            "git add"
+        ]
+    },
+    "dependencies": {
+        "polished": "^4.0.5",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-router-dom": "5.2.0",
+        "react-scripts": "4.0.1",
+        "styled-components": "^5.2.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "enzyme": "3.11.0",
+        "enzyme-adapter-react-16": "1.15.5",
+        "eslint": "^7.8.1",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-config-webchannel": "0.1.3",
+        "eslint-plugin-html": "^6.1.0",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.20.6",
+        "eslint-plugin-react-hooks": "^4.1.2",
+        "husky": "^4.3.6",
+        "lint-staged": "^10.5.3",
+        "prettier": "^2.2.1",
+        "prettier-config-webchannel": "^0.1.1",
+        "stylelint": "^13.7.2",
+        "stylelint-config-recommended": "^3.0.0",
+        "stylelint-config-styled-components": "^0.1.1",
+        "stylelint-processor-styled-components": "^1.10.0"
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "eslint --cache --fix",
-      "prettier --single-quote --write",
-      "git add"
-    ]
-  },
-  "prettier": {
-    "singleQuote": true
-  },
-  "keywords": [],
-  "description": ""
 }

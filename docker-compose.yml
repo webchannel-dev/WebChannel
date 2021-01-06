@@ -1,21 +1,21 @@
 version: '3.5'
 
 services:
-    webchannel:
-        container_name: webchannel
-        build:
-            context: .
-            dockerfile: Dockerfile
-            target: development
-            # args:
-                # NPM_TOKEN: "${NPM_TOKEN}"
-        image: aj-7885/webchannel
-        command: [ "/bin/sh", "-c", "yarn start" ]
-        # environment:
-            # NPM_TOKEN: "${NPM_TOKEN}"
-        volumes:
-            - '.:/usr/src/app:cached'
-            - '/usr/src/app/node_modules'
-        ports:
-            - '3000:3000'
-            - '3001:3001'
+  webchannel:
+    container_name: webchannel
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+      # args:
+      # NPM_TOKEN: "${NPM_TOKEN}"
+    image: aj-7885/webchannel
+    command: ['/bin/sh', '-c', 'yarn start']
+    # environment:
+    # NPM_TOKEN: "${NPM_TOKEN}"
+    volumes:
+      - '.:/usr/src/app:cached'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '3000:3000'
+      - '3001:3001'

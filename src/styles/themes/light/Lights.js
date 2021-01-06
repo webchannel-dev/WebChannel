@@ -10,9 +10,9 @@ const mediaQuery = getMediaQuery(breakpoints);
 const typography = getTypography(fonts, breakpoints, mediaQuery);
 
 export default {
-    fonts,
-    utils: { rem, typography },
-    colors,
-    mediaQuery,
-    breakpoints
+  fonts,
+  utils: { rem, typography },
+  colors,
+  mediaQuery,
+  breakpoints,
 };

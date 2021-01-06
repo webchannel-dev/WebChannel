@@ -6,20 +6,20 @@ Guide how to contribute to webchannel
 
 This project uses following libraries for development:
 
--   [react](https://github.com/facebook/react) as base library
+- [react](https://github.com/facebook/react) as base library
 
 ## Project structure
 
--   `src/` - source root
+- `src/` - source root
 
 ## Components Requirements
 
 Each component should have:
 
--   Main `MyComponent.jsx` file
--   Test in `MyComponent.test.js` file
--   Style in separate `MyComponent.style.js` file
--   Test data in `MyComponent.data.js` file if needed
+- Main `MyComponent.jsx` file
+- Test in `MyComponent.test.js` file
+- Style in separate `MyComponent.style.js` file
+- Test data in `MyComponent.data.js` file if needed
 
 ## Development process
 

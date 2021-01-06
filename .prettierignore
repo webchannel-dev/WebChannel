@@ -6,3 +6,4 @@ assets/**
 js/**
 node_modules/**
 *.json
+coverage/**
