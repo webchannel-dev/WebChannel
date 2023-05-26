@@ -24,7 +24,7 @@ COPY . /usr/src/app
 RUN yarn test && yarn build
 
 # production
-FROM nginx:stable-alpine as production
+FROM nginx:mainline-alpine as production
 COPY --from=build /usr/src/app/publish /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
